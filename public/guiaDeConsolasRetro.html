@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>estudio vazio</title>
+</head>
+
+<body>
+    <header>
+        <button id="arriba">↑</button>
+        <aside>
+            <a href="index.html" aria-current="page"><h1>Estudio Vazio</h1></a>
+            <!-- NAVEGACIÓN GLOBAL -->
+            <nav aria-label="Navegación principal">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="cronologiaZelda.html">The Legend of Zelda</a>
+                <a href="guiaDeConsolasRetro.html">Consolas Emuladoras</a>
+                <a href="juegos.html">Compatibilidad</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modo" onclick="cambiarModo()">Modo Oscuro</button>
+            </nav>
+        </aside>
+    </header>
+    <script src="js/scriptModoOscuro.js"></script>
+    <main>
+        <section class="intro">
+            <h2>Guía de Consolas Retro Emuladoras</h2>
+            <p style="text-align:justify;">
+                En los últimos años, las consolas retro emuladoras han ganado popularidad, impulsado tanto por la
+                nostalgia de los videojuegos clásicos como por los avances tecnológicos que permiten ejecutar múltiples
+                plataformas en un solo dispositivo. Actualmente existe una gran variedad de modelos que difieren en
+                diseño, potencia, sistema operativo y precio, lo que puede dificultar su comparación. La siguiente tabla
+                presenta una comparativa general de algunas de las consolas retro más representativas del mercado, con
+                el fin de facilitar una visión clara de sus principales características técnicas y diferencias.
+            </p>
+        </section>
+        <section class="tabla">
+            <figure class="imagenPrincipal">
+                <h2 id="nombreConsola">AYN Thor</h2>
+                <img src="Imagenes/ConsolasRetro/big-thor.jpg" id="principal" alt="Principal">
+            </figure>
+            <table>
+                <caption>Comparación de Consolas Retro Emuladoras</caption>
+                <thead>
+                    <tr>
+                        <th id="parametros" rowspan="2" scope="col">Parámetros</th>
+                        <th id="consolas" colspan="17" scope="col">Consolas</th>
+                    </tr>
+                    <tr>
+                        <th colspan="8" id="ayn" scope="colgroup"><a href="https://www.ayntec.com"
+                                target="_blank">AYN</a></th>
+                        <th colspan="4" id="retroid" scope="colgroud"><a href="https://www.goretroid.com"
+                                target="_blank">Retroid</a></th>
+                        <th id="anbernic" scope="colgroup"><a href="https://anbernic.com/en-es"
+                                target="_blank">Anbernic</a></th>
+                        <th id="generico" scope="col"><a href="https://consolar36s.com" target="_blank">Genérico</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="nombre" scope="row">Nombre</th>
+                        <th headers="ayn" id="thor" colspan="4"><a href="https://www.ayntec.com/products/ayn-thor"
+                                target="_blank">Thor</a></th>
+                        <th headers="ayn" id="odin3" colspan="4"><a href="https://www.ayntec.com/products/ayn-odin-3"
+                                target="_blank">Odin 3</a></th>
+                        <th headers="retroid" id="pocket6" colspan="2"><a
+                                href="https://www.goretroid.com/collections/frontpage/products/retroid-pocket-6-handheld"
+                                target="_blank">Pocket 6</a></th>
+                        <th headers="retroid" id="flip2" colspan="2"><a
+                                href="https://www.goretroid.com/products/retroid-pocket-flip-2" target="_blank">Flip
+                                2</a></th>
+                        <th headers="anbernic" id="rgds"><a href="https://anbernic.com/es-es/products/rgds"
+                                target="_blank">RG DS</a></th>
+                        <th headers="generico" id="r36s"><a href="https://consolar36s.com" target="_blank">R36S</a></th>
+                    </tr>
+                    <tr>
+                        <th id="imagen" scope="row"><!--Imagen--></th>
+
+                        <!--AYN Thor-->
+                        <td headers="imagen ayn thor" colspan="4">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/thor.jpg" alt="AYN Thor" 
+                                    data-grande="Imagenes/ConsolasRetro/big-thor.jpg" 
+                                    data-nombre="AYN Thor"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                        <!--AYN Odin 3-->
+                        <td headers="imagen ayn odin3" colspan="4">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/odin3.jpg" alt="AYN Odin 3" 
+                                    data-grande="Imagenes/ConsolasRetro/big-odin3.jpg" 
+                                    data-nombre="AYN Odin 3"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="imagen retroid pocket6" colspan="2">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/pocket6.jpg" alt="Retroid Pocket 6" 
+                                    data-grande="Imagenes/ConsolasRetro/big-pocket6.jpg" 
+                                    data-nombre="Retroid Pocket 6"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                        <!--Retroid Flip 2-->
+                        <td headers="imagen retroid flip2" colspan="2">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/flip2.jpg" alt="Retroid Flip 2" 
+                                    data-grande="Imagenes/ConsolasRetro/big-flip2.jpg" 
+                                    data-nombre="Retroid Flip 2"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                        <!--Anbernic RG DS-->
+                        <td headers="imagen anbernic rgds">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/rgds.jpg" alt="Anbernic RG DS" 
+                                    data-grande="Imagenes/ConsolasRetro/big-rgds.jpg" 
+                                    data-nombre="Anbernic RG DS"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                        <!--R36S-->
+                        <td headers="imagen generico r36s">
+                            <div>
+                                <img src="Imagenes/ConsolasRetro/r36s.jpg" alt="R36S" 
+                                    data-grande="Imagenes/ConsolasRetro/big-r36s.jpg" 
+                                    data-nombre="R36S"
+                                    onclick="cambiar(this)">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th id="forma" scope="row">Forma</th>
+
+                        <!--AYN Thor-->
+                        <td headers="forma ayn thor" colspan="4"">Plegable</td>
+                        <!--AYN Odin 3-->
+                        <td headers=" forma ayn odin3" colspan="4"">Horizontal</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers=" forma retroid pocket6" colspan="2">Horizontal</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="forma retroid flip2" colspan="2">Plegable</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="forma anbernic rgds">Plegable</td>
+                        <!--R36s-->
+                        <td headers="forma generico r36s">Vertical</td>
+                    </tr>
+                    <tr>
+                        <th id="modelos" scope="row">Modelos</th>
+
+                        <!--AYN Thor-->
+                        <td headers="modelos ayn thor">Lite</td>
+                        <td headers="modelos ayn thor">Base</td>
+                        <td headers="modelos ayn thor">Pro</td>
+                        <td headers="modelos ayn thor">Max</td>
+                        <!--AYN Odin 3-->
+                        <td headers="modelos ayn odin3">Base</td>
+                        <td headers="modelos ayn odin3">Pro</td>
+                        <td headers="modelos ayn odin3">Max</td>
+                        <td headers="modelos ayn odin3">Ultra</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="modelos retroid pocket6">8G</td>
+                        <td headers="modelos retroid pocket6">12G</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="modelos retroid flip2">D1100</td>
+                        <td headers="modelos retroid flip2">SD865</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="modelos anbernic rgds">Estándar</td>
+                        <!--R36S-->
+                        <td headers="modelos generico r36s">64GB</td>
+                    </tr>
+
+                    <tr>
+                        <th id="precio" scope="row">Precio USD</th>
+
+                        <!--AYN Thor-->
+                        <td headers="precio ayn thor">$259</td>
+                        <td headers="precio ayn thor">$319</td>
+                        <td headers="precio ayn thor">$399</td>
+                        <td headers="precio ayn thor">$489</td>
+                        <!--AYN Odin 3-->
+                        <td headers="precio ayn odin3">$339</td>
+                        <td headers="precio ayn odin3">$439</td>
+                        <td headers="precio ayn odin3">$489</td>
+                        <td headers="precio ayn odin3">$519</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="precio retroid pocket6">$244</td>
+                        <td headers="precio retroid pocket6">$279</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="precio retroid flip2">$179</td>
+                        <td headers="precio retroid flip2">$229</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="precio anbernic rgds">$93.52</td>
+                        <!--R36S-->
+                        <td headers="precio generico r36s">~$28</td>
+                    </tr>
+                    <tr>
+                        <th id="Procesador" scope="row">Procesador</th>
+
+                        <!--AYN Thor-->
+                        <td headers="procesador ayn thor">SD865</td>
+                        <td headers="procesador ayn thor" colspan="3">SD8G2</td>
+                        <!--AYN Odin 3-->
+                        <td headers="procesador ayn odin3" colspan="4">SD8Elite</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="procesador retroid pocket6" colspan="2">SD8G2</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="procesador retroid flip2">D1100</td>
+                        <td headers="procesador retroid flip2">SD865</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="procesador anbernic rgds">RK3568</td>
+                        <!--R36S-->
+                        <td headers="procesador generico r36s">RK3326</td>
+                    </tr>
+                    <tr>
+                        <th id="Redimiento" scope="row">Redimiento</th>
+
+                        <!--AYN Thor-->
+                        <td headers="redimiento ayn thor">34</td>
+                        <td headers="redimiento ayn thor" colspan="3">58</td>
+                        <!--AYN Thor-->
+                        <td headers="redimiento ayn odin3" colspan="4">100</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="redimiento retroid pocket6" colspan="2">58</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="redimiento retroid pocket6">31</td>
+                        <td headers="redimiento retroid pocket6">34</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="redimiento anbernic rg ds">6</td>
+                        <!--R36S-->
+                        <td headers="redimiento generico r36s">1</td>
+                    </tr>
+                    <tr>
+                        <th id="ram" scope="row">RAM</th>
+
+                        <!--AYN Thor-->
+                        <td colspan="2" style="text-align: center;">8GB</td>
+                        <td headers="ram ayn thor">12GB</td>
+                        <td headers="ram ayn thor">16GB</td>
+                        <!--AYN Odin 3-->
+                        <td headers="ram ayn odin3">8GB</td>
+                        <td headers="ram ayn odin3">12GB</td>
+                        <td headers="ram ayn odin3">16GB</td>
+                        <td headers="ram ayn odin3">24GB</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="ram retroid pocket6">8GB</td>
+                        <td headers="ram retroid pocket6">12GB</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="ram retroid flip2" colspan="2">8GB</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="ram anbernic rgds">3GB</td>
+                        <!--R36S-->
+                        <td headers="ram generico r36s">1GB</td>
+                    </tr>
+                    <tr>
+                        <th id="almacenamiento" scope="row">Almacenamiento</th>
+
+                        <!--AYN Thor-->
+                        <td colspan="2" style="text-align: center;">128GB*</td>
+                        <td headers="almacenamiento ayn thor">256GB*</td>
+                        <td headers="almacenamiento ayn thor">1TB*</td>
+                        <!--AYN Odin 3-->
+                        <td headers="almacenamiento ayn odin3">128GB*</td>
+                        <td headers="almacenamiento ayn odin3">256GB*</td>
+                        <td headers="almacenamiento ayn odin3">512GB*</td>
+                        <td headers="almacenamiento ayn odin3">1TB*</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="almacenamiento retroid pocket6">128GB*</td>
+                        <td headers="almacenamiento retroid pocket6">256GB*</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="almacenamiento retroid flip2" colspan="2">128GB*</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="almacenamiento anbernic rgds">32GB*</td>
+                        <!--R36S-->
+                        <td headers="almacenamiento generico r36s">64GB**</td>
+                    </tr>
+                    <tr>
+                        <th id="batería" scope="row">Batería</th>
+
+                        <!--AYN Thor-->
+                        <td headers="bateria ayn thor" colspan="4">6000mAh</td>
+                        <!--AYN Odin 3-->
+                        <td headers="bateria ayn odin3" colspan="4">8000mAh</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="bateria retroid pocket6" colspan="2">6000mAh</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="bateria retroid flip2" colspan="2">5000mAh</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="bateria anbernic rgds">4000mAh</td>
+                        <!--R36S-->
+                        <td headers="bateria generico r36s">3000mAh</td>
+                    </tr>
+                    <tr>
+                        <th id="os" scope="row">OS</th>
+
+                        <!--AYN Thor-->
+                        <td headers="os ayn thor" colspan="4">Android 13</td>
+                        <!--AYN Odin 3-->
+                        <td headers="os ayn odin3" colspan="4">Android 15</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="os retroid pocket6" colspan="2">Android 13</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="os retroid flip2" colspan="2">Android 13</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="os anbernic rgds">Android 14</td>
+                        <!--R36S-->
+                        <td headers="os generico r36s">Linux***</td>
+                    </tr>
+                    <tr>
+                        <th id="cantPantallas" scope="row">Cantidad de pantallas</th>
+
+                        <!--AYN Thor-->
+                        <td headers="cantPantallas ayn thor" colspan="4">2</td>
+                        <!--AYN Odin 3-->
+                        <td headers="cantPantallas ayn odin3" colspan="4">1</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="cantPantallas retroid pocket6" colspan="2">1</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="cantPantallas retroid flip2" colspan="2">1</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="cantPantallas anbernic rgds">2</td>
+                        <!--R36S-->
+                        <td headers="cantPantallas generico r36s">1</td>
+                    </tr>
+                    <tr>
+                        <th id="tipoPantalla" scope="row">Tipo de pantalla</th>
+
+                        <!--AYN Thor-->
+                        <td headers="tipoPantalla ayn thor" colspan="4">OLED</td>
+                        <!--AYN Odin 3-->
+                        <td headers="tipoPantalla ayn odin3" colspan="4">OLED</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="tipoPantalla retroid pocket6" colspan="2">OLED</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="tipoPantalla retroid flip2" colspan="2">OLED</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="tipoPantalla anbernic rgds">IPS</td>
+                        <!--R36S-->
+                        <td headers="tipoPantalla generico r36s">IPS</td>
+                    </tr>
+                    <tr>
+                        <th id="tamPantalla" scope="row">Tamaño de pantalla</th>
+
+                        <!--AYN Thor-->
+                        <td headers="tamPantalla ayn thor" colspan="2">6"</td>
+                        <td headers="tamPantalla ayn thor" colspan="2">3.92"</td>
+                        <!--AYN Odin 3-->
+                        <td headers="tamPantalla ayn odin3" colspan="4">6"</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="tamPantalla retroid pocket6" colspan="2">5.5"</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="tamPantalla retroid flip2" colspan="2">5.5"</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="tamPantalla anbernic rgds">4"</td>
+                        <!--R36S-->
+                        <td headers="tamPantalla generico r36s">3.5"</td>
+                    </tr>
+                    <tr>
+                        <th id="resolucion" scope="row">Resolución</th>
+
+                        <!--AYN Thor-->
+                        <td headers="resolucion ayn thor" colspan="2">1080x1920</td>
+                        <td headers="resolucion ayn thor" colspan="2">1080x1240</td>
+                        <!--AYN Odin 3-->
+                        <td headers="resolucion ayn odin3" colspan="4">1080x1920</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="resolucion retroid pocket6" colspan="2">1080x1920</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="resolucion retroid flip2" colspan="2">1080x1920</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="resolucion anbernic rgds">640x480</td>
+                        <!--R36S-->
+                        <td headers="resolucion generico r36s">640x480</td>
+                    </tr>
+                    <tr>
+                        <th id="peso" scope="row">Peso</th>
+
+                        <!--AYN Thor-->
+                        <td headers="peso ayn thor" colspan="4">380g</td>
+                        <!--AYN Odin 3-->
+                        <td headers="peso ayn odin3" colspan="4">390g</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="peso retroid pocket6" colspan="2">310g</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="peso retroid flip2" colspan="2">306g</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="peso anbernic rgds">321g</td>
+                        <!--R36S-->
+                        <td headers="peso generico r36s">194g</td>
+                    </tr>
+                    <tr>
+                        <th id="dimensiones" scope="row">Dimensiones</th>
+
+                        <!--AYN Thor-->
+                        <td headers="dimensiones ayn thor" colspan="4">150x94x25.6mm</td>
+                        <!--AYN Odin 3-->
+                        <td headers="dimensiones ayn odin3" colspan="4">224.8x87.5x16.6mm</td>
+                        <!--Retroid Pocket 6-->
+                        <td headers="dimensiones retroid pocket6" colspan="2">205.5x80.5x17.2mm</td>
+                        <!--Retroid Flip 2-->
+                        <td headers="dimensiones retroid pocket6" colspan="2">140.5x89.5x24.4mm</td>
+                        <!--Anbernic RG DS-->
+                        <td headers="dimensiones anbernic rgds">160x91x21.5mm</td>
+                        <!--R36S-->
+                        <td headers="dimensiones generico r36s">105x165x45mm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Me gusta</th>
+
+                        <td colspan="4">
+                            <button class="like-btn" data-consola="Thor">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+
+                        <td colspan="4">
+                            <button class="like-btn" data-consola="Odin3">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+
+                        <td colspan="2">
+                            <button class="like-btn" data-consola="Pocket6">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+
+                        <td colspan="2">
+                            <button class="like-btn" data-consola="Flip2">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+
+                        <td>
+                            <button class="like-btn" data-consola="RGDS">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+
+                        <td>
+                            <button class="like-btn" data-consola="R36S">Me gusta</button>
+                            <span class="like-count">0</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <article>
+            <p>
+                    *Dispone de una interfaz para una tarjeta SD para ampliar el almacenamiento.
+                </p>
+                <p>
+                    **No tiene memoria interna, por lo que es obligatorio el uso de una tarjeta SD, se recomienda cambiar la tarjeta SD de fábrica.
+                </p>
+                <p>
+                    ***El sistema operativo basado en Linux puede ser ArkOS, AmberELEC y Rocknix al momento, optimizados para ser instalados y jugar.
+                </p>
+                </article>
+            </section>
+            
+            <section>
+                <article>
+                    <p>
+                        La elección de una consola retro depende directamente del tipo de experiencia que se busca. Para quienes desean centrarse en sistemas clásicos y de menor exigencia técnica, la R36S representa una opción accesible y suficiente para la emulación de generaciones más antiguas. En un nivel intermedio, si el objetivo es ejecutar consolas más demandantes como PlayStation 2, Wii o GameCube, e incluso acceder a plataformas como Steam o Epic Games en configuraciones moderadas, la Retroid Pocket 6 ofrece un equilibrio adecuado entre rendimiento y precio.
+                    </p>
+                    <p>
+                        Cuando se trata de añadir una experiencia más cercana a Nintendo DS y 3DS, la AYN Thor, al menos en su versión Pro, se posiciona como una alternativa especialmente atractiva. No obstante, por su mayor cantidad de memoria RAM y la velocidad de almacenamiento interno frente al uso de tarjetas SD, la versión Max resulta más completa a largo plazo. Su diseño plegable no solo protege la pantalla y los controles, sino que su segunda pantalla amplía significativamente las posibilidades de uso, ya sea para juegos de doble pantalla o para tareas complementarias como consultar guías, visualizar mapas o reproducir contenido adicional mientras se juega.
+                    </p>
+                    <p>
+                        Finalmente, si el propósito principal es ejecutar títulos de Steam y Epic Games de mayor exigencia gráfica, incluidos juegos de categoría AAA, la Odin 3 se perfila como la alternativa más adecuada dentro de esta comparativa, al ofrecer el mayor nivel de potencia y versatilidad.
+                    </p>
+                </article>
+            </section>
+        <hr>
+        <section id="enlaces">
+            <aside>
+                <h2>Contacto</h2>
+                <p>
+                    Escríbenos a
+                    <a href="mailto:info@ejemplo.com?subject=Consulta&body=Hola">
+                        marketing@estudiovazio.com
+                    </a>
+                </p>
+
+                <p>
+                    Llámanos al
+                    <a href="tel:+521234567890">+52 123 456 7890</a>
+                </p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="Navegación del pie de página">
+            <a href="https://www.instagram.com/p/B9NX8m5nA4o/" target="_blank" rel="external noopener">
+                Instagram
+            </a>
+        </nav>
+
+        <p>&copy; 2026 Estudio Vazio | Todos los derechos reservados</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+<script src="js/app.js"></script>
+
+</html>

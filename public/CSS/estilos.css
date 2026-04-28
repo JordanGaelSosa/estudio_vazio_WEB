@@ -1,0 +1,421 @@
+/* =========================
+VARIABLES DE COLOR
+========================= */
+
+:root {
+    color-scheme: light;
+
+    --bg: #eef6f2;
+    --bg-sec: #dceee6;
+    --bg-header: #397670;
+
+    --primario: #4fae74;
+    --secundario: #2c8f8f;
+
+    --texto: #1f2a28;
+    --borde: #b8d2c7;
+}
+
+.oscuro {
+    color-scheme: dark;
+
+    --bg: #0f2e2b;
+    --bg-sec: #123a34;
+    --bg-header: #133935;
+
+    --primario: #5cc28a;
+    --secundario: #3fa5a5;
+
+    --texto: #e9f5f0;
+    --borde: #214c45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.zelda {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    section, hr {
+        grid-column: 2;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-header);
+    border-bottom: 2px solid var(--borde);
+    z-index: 1000;
+}
+
+header aside {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+header h1 {
+    color: var(--primario);
+    font-size: 1.8rem;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold
+}
+
+nav a:hover {
+    color: var(--primario);
+    text-decoration: none;
+}
+
+nav[aria-labelledby="tocTitle"] {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: -1000px;
+    grid-column: 1;
+    top: 80px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--bg-sec);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+figure img {
+    margin-top: 30px;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+section video {
+    border-radius: 10px;
+}
+
+section p {
+    text-align: justify;
+}
+
+section a {
+    color: var(--primario);
+    text-decoration: none;
+}
+
+section a:hover {
+    color: var(--secundario);
+}
+
+dl {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px
+}
+
+audio {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: var(--bg-sec);
+    text-align: center;
+    padding: 40px;
+
+    nav {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: var(--primario);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--secundario);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tabla {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 2px solid var(--borde);
+    padding: 5px;
+    text-align: center;
+    img {
+        height: 150px;
+    }
+}
+
+th {
+    color: var(--texto);
+}
+
+section .enlaces {
+    text-align: center;
+}
+
+li {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+form {
+    background: var(--bg-sec);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 1px solid var(--borde);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    margin-top: 5px;
+    background: var(--bg-sec);
+    color: var(--texto);
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 18px;
+    background: var(--primario);
+    color: var(--texto);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: var(--secundario);
+}
+
+#arriba {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#modo {
+    width: 130px;
+}
+
+main .cartas:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: var(--bg-sec);
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+    color: var(--texto);
+    width: 100%;
+    max-width: 350px;
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#miniaturas {
+    text-align: center;
+}
+
+.imagenPrincipal {
+    text-align: center;
+    margin:0;
+
+    #principal {
+        height: 500px;
+        margin: 0;
+    }
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.tarjeta {
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.tarjeta:not(.activa) {
+        flex: 0 0 auto;
+        order: 1;
+
+        h2 {
+            display: none;
+        }
+        img {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+    }
+
+.tarjeta.activa {
+    flex: 0 0 100%;
+    
+    img {
+        height: 400px;
+    }
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Contenedor del formulario */
+    .formulario form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Cada campo */
+    .campo {
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        flex: 1;
+    }
+
+    /* Inputs y select */
+    .campo input,
+    .campo select {
+        width: 100%;
+    }
+
+    /* Botones alineados */
+    .acciones-form {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+}
+
+.rendimiento {
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+/* colores */
+.rendimiento.perfecto { background: rgb(0, 180, 0); }
+.rendimiento.genial   { background: rgb(0, 200, 120); }
+.rendimiento.jugable  { background: rgb(255, 170, 0); }
+.rendimiento.pobre    { background: rgb(255, 80, 80); }
+.rendimiento.carga    { background: rgb(120, 120, 120); }
+.rendimiento.nada     { background: rgb(196, 196, 196); }

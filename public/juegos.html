@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudio vazio</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="arriba">↑</button>
+        <aside>
+            <a href="index.html" aria-current="page"><h1>Estudio Vazio</h1></a>
+            <!-- NAVEGACIÓN GLOBAL -->
+            <nav aria-label="Navegación principal">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="cronologiaZelda.html">The Legend of Zelda</a>
+                <a href="guiaDeConsolasRetro.html">Consolas Emuladoras</a>
+                <a href="juegos.html">Compatibilidad</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modo" onclick="cambiarModo()">Modo Oscuro</button>
+            </nav>
+        </aside>
+    </header>
+
+    <script src="js/scriptModoOscuro.js"></script>
+    <main>
+        <div class="container">
+            <h1>Compatibilidad de Videojuegos</h1>
+
+            <!-- FORMULARIO -->
+            <div class="formulario">
+                <h2 id="formTitulo">➕ Nuevo Juego</h2>
+
+                <form id="form">
+                    <div class="campo">
+                        <label>Juego:</label>
+                        <input type="text" id="juego" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Sistema:</label>
+                        <input type="text" id="sistema" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Emulador:</label>
+                        <input type="text" id="emulador" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Dispositivo:</label>
+                        <input type="text" id="dispositivo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Rendimiento:</label>
+                        <select id="rendimiento" required>
+                            <option value="">Selecciona rendimiento</option>
+                            <option value="Perfecto">Perfecto</option>
+                            <option value="Genial">Genial</option>
+                            <option value="Jugable">Jugable</option>
+                            <option value="Pobre">Pobre</option>
+                            <option value="Carga">Carga</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                    </div>
+
+                    <div class="acciones-form">
+                        <button type="submit" id="btnGuardar" class="btn-guardar">💾 Guardar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- TABLA -->
+            <div class="tabla-container">
+                <h2>📋 Lista de Juegos</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Juego</th>
+                            <th>Sistema</th>
+                            <th>Emulador</th>
+                            <th>Dispositivo</th>
+                            <th>Rendimiento</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla"></tbody>
+                </table>
+            </div>
+
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+
+        <script src="js/app.js"></script>
+    
+        <hr>
+        <section id="enlaces">
+            <aside>
+                <h2>Contacto</h2>
+                <p>
+                    Escríbenos a
+                    <a href="mailto:info@ejemplo.com?subject=Consulta&body=Hola">
+                        marketing@estudiovazio.com
+                    </a>
+                </p>
+
+                <p>
+                    Llámanos al
+                    <a href="tel:+521234567890">+52 123 456 7890</a>
+                </p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="Navegación del pie de página">
+            <a href="https://www.instagram.com/p/B9NX8m5nA4o/" target="_blank" rel="external noopener">
+                Instagram
+            </a>
+        </nav>
+
+        <p>&copy; 2026 Estudio Vazio | Todos los derechos reservados</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
