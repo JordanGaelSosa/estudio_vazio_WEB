@@ -3,7 +3,7 @@
    ============================================ */
 
 // ========== CONFIGURACIÓN ==========
-const API_URL = 'http://localhost:3000/api/juegos';
+const API_URL = 'https://estudio-vazio-web.onrender.com/api/juegos';
 
 // Variables globales
 let juegos = [];
@@ -228,7 +228,7 @@ if (document.getElementById('cuerpoTabla')) {
 
 
 // ============== LIKES ===============
-const API_LIKES = 'http://localhost:3000/api/likes';
+const API_LIKES = 'https://estudio-vazio-web.onrender.com/api/likes';
 
 // Cargar likes al iniciar
 async function cargarLikes() {
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 const consola = btn.dataset.consola;
 
-                const res = await fetch(`http://localhost:3000/api/likes/${consola}`, {
+                const res = await fetch(`https://estudio-vazio-web.onrender.com/api/likes/${consola}`, {
                     method: 'POST'
                 });
 
@@ -311,7 +311,7 @@ if (formContacto) {
         };
 
         try {
-            const res = await fetch("http://localhost:3000/api/contacto", {
+            const res = await fetch("https://estudio-vazio-web.onrender.com/api/contacto", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
